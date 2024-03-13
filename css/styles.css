@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    color: #fff;
+    font-family: "Open Sans", sans-serif, system-ui;
+    background-color: #1e232b;
+}
+
+#cerrar{
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.btn-responsive{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.header-logo p{
+    font-size: 50px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.nav-bar ul li a:hover{
+    color: #ccc;
+}
+
+.nav-bar .submenu .childs {
+    display: none;
+    background-color: #1e232b;
+    border-top: 1px solid #cab6a1;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.nav-bar ul li:hover .childs {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar button {
+    margin: auto;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-image: linear-gradient(180deg, rgba(31, 35, 44, .7) 0%, #1e232b 100%), url(../images/hero2.jpg);
+    background-size: cover;
+    
+}
+
+.hero h1{
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 10px 0 ;
+}
+
+.hero h2{
+    font-weight: 400;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 7rem;
+    color: #cab6a1;
+    margin: 10px 0 ;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 ;
+    text-align: center;
+}
+
+.hero img {
+    width: 8%;
+    margin: 10px 0;
+}
+
+.contenedor-servicio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.barrita {
+    width: 90px;
+    margin: 30px 0;
+}
+
+.texto {
+    text-align: left;
+}
+
+.servicio-info h3 {
+    font-size: 2.3rem;
+    color: #cab6a1;
+    margin-top: 70px;
+}
+
+.texto-2{
+    margin: 40px 0;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 350px;
+    height: 400px;
+}
+
+.tarjeta img {
+    width: 100px;
+}
+
+.tarjeta h4 {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 17px 0;
+    color: #cab6a1
+}
+
+.tarjeta p {
+    text-align: center;
+}
+
+.porqueelegirnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-eleginos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    width: 100%;
+}
+
+.porqueelegirnos-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.contenedor-eleginos-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #cab6a1;
+    padding: 20px;
+    margin-right: 20px;
+}
+.contenedor-eleginos-num h5 {
+    font-size: 1.3rem;
+}
+
+.contenedor-eleginos-texto h4 {
+    font-size: 1.9rem;
+    color: #cab6a1;
+}
+
+.comofunciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.unite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.unite img {
+    margin: 60px 0;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #1e232b 0%, rgba(30, 35, 43, .9) 100%), url(../images/papel-textura.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #cab6a1;
+    padding: 50px;
+    width: 60%;
+
+
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-contacto a {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.footer-titulo,
+.footer-titulo a{
+    font-size: 1.55rem;
+    margin-bottom: 20px;
+    font-family: "Nanum Myeongjo", serif;
+    color: #cab6a1;
+}
+
+.footer-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-horario p {
+    margin-top: 30px;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-logo img{
+    width: 40%;
+}
+
+
+.footer-derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+
+@media screen and (max-width:1240px){
+
+    .hero img {
+        width: 130px;
+        margin: 10px 0;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .footer-horario{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:904px){
+
+    .hero h2 {
+        font-size: 5.6rem;
+    }
+}
+
+@media screen and (max-width:760px){
+
+    .hero h2 {
+        font-size: 4.8rem;
+    }
+
+
+    #menu {
+        display: block;
+        margin: 1em;
+    }
+
+    #cerrar {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    .header-logo{
+        flex-direction: column;
+    }
+    
+    .nav-bar {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        position: absolute;
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+        width: auto;
+        background-color: #1e232b;
+        height: 100vh;
+    }
+
+    .nav-bar.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar ul li {
+        display: block;
+    }
+
+    .childs > li {
+        font-size: 1rem;
+    }
+
+    .nav-bar ul li a{
+        font-size: 1em;
+    }
+
+    .nav-bar .submenu .childs {
+        left: 80%;
+        width: 100%;
+        
+    }
+
+    .header-logo{
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width:650px){
+
+    .hero h2 {
+        font-size: 4rem;
+    }
+
+    .contenedor-eleginos{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-eleginos-num{
+        margin-right: 0;
+    }
+
+    .contenedor-eleginos-texto h4{
+        margin: 10px 0;
+    }
+
+
+
+}
+
+@media screen and (max-width:550px){
+
+    .header-logo p{
+        margin: 30px 0;
+        font-size: 30px;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero h2 {
+        font-size: 3.7rem;
+    }
+
+    .hero p{
+        font-size: 1.1rem;
+    }
+
+    .servicio-info h3{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:440px){
+
+    .servicio-info{
+        width: 85%;
+    }
+
+    .hero h1 {
+        font-size: 1.1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.7rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .barrita{
+        margin: 50px 0;
+    }
+
+    .servicio-info h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:300px){
+
+    .servicio-info{
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.1rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .tarjeta{
+        width: 200px;
+    }
+
+    .tarjeta h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .tarjeta img{
+        width: 70px;
+    }
+
+    .servicio-info h3{
+        text-align: center;
+    }
+}
